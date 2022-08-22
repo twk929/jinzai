@@ -1,0 +1,109 @@
+.ppp {
+
+    background-image: url('../img/pexels-cowomen-2041629.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #a2afff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a2ea7;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #555;
+}
+
+.bg-newBlue {
+    background-color: #1a2ea7;
+    border-radius: 10px;
+}
+
+.customBtn:hover {
+    background-color: black;
+}
+
+#back-to-up {
+    margin: 10px;
+}
+
+#preloader {
+    background: #b4b4b4 url('../img/eb.gif') no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#preloader > img {
+    margin: 0;
+    justify-content: center;
+    display: block;
+    align-content: center;
+    align-items: center;
+
+}
+
+.carousel-item {
+    min-height: 100vh;
+}
+#feature{
+    color: #1a2ea7;
+}
+#staff{
+    color: #1a2ea7;
+}
+#feature-sub{
+    color: #a2afff;
+}
+
+#staff-sub{
+    color: #a2afff;
+}
+header{
+
+}
+
+main{
+
+}
+
+.bg{
+    background-color: #1a2ea7;
+    color: white;
+}
+
+.c{
+    background: #b4b4b4 url('../img/carousel-1.jpg') no-repeat center center;
+}
+.cc{
+    background: #b4b4b4 url('../img/carousel-2.jpg') no-repeat center center;
+}
+.ccc{
+    background: #b4b4b4 url('../img/carousel-3.jpg') no-repeat center center;
+}
+
+.c-title{
+    font-size: 50pt;
+}
+.c-prgh{
+    font-size: 30pt;
+}
+
+@media screen and (max-width: 480px) {
+    .c-title{
+        font-size: 20pt;
+    }
+    .c-prgh{
+        font-size: 10pt;
+    }
+}
