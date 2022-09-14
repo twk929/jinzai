@@ -1,21 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!--    ======================================================-->
-    <!--    develop by : https://github.com/udarasan-->
-    <!--    date : 2022.11.08-->
-    <!--    ======================================================-->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicons -->
-    <!--
-        <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-        <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-        <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-        <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
-        <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-        <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">-->
+    <link rel="icon" type="image/x-icon" href="./img/eb.ico">
+    <meta name="description" content="外国人雇用時の前勤務先へのヒアリング代行サービスならお任せください！企業様が人材採用時、応募者の前勤務先での勤務態度などを、代行してヒアリングし、スムーズな採用活動をサポートするサービスです。特定技能などの入国予定の就業者採用にも最適です。">
+    <meta name="keywords" content="外国人採用,特定技能,ヒアリング代行サービス,Job Reliable,株式会社イースト・ブリッジ">
+    <title>Job Reliable｜株式会社イースト・ブリッジ</title>
+
 
     <!-- Custom styles for this template -->
     <link href="css/hover-min.css" rel="stylesheet" media="all">
@@ -40,9 +35,14 @@
         loader.style.display = "none";
     })
 </script>
-<header >
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Eighth navbar example">
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+</script>
+<header >   
+     
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top xc" aria-label="Eighth navbar example">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo-EastBridge.png"></a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -51,7 +51,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="navbar-collapse collapse" id="navbarsExample07" >
+            <div class="navbar-collapse collapse navx" id="navbarsExample07" >
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 
@@ -61,10 +61,10 @@
                         <a class="nav-link fw-semibold text-black" a href="http://www.yorisoi-caregiver.com/indonesia/">インドネシア校</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold text-black" a href="http://www.yorisoi-caregiver.com/indonesia/">ネパール校</a>
+                        <a class="nav-link fw-semibold text-black" a href="http://www.yorisoi-caregiver.com/nepal/">ネパール校</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold text-black" a href="http://www.yorisoi-caregiver.com/indonesia/">フィリピンコールセンター</a>
+                        <a class="nav-link fw-semibold text-black" a href="http://www.yorisoi-caregiver.com/philippines/">フィリピンコールセンター</a>
                     </li>
                     <li class="nav-item">
 
@@ -78,7 +78,9 @@
 
             </div>
         </div>
+        
     </nav>
+
 </header>
 
 <main>
@@ -134,6 +136,53 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+    <!--counter-->
+
+    <div class="bg-light">
+        <div class="1 container py-3 ">
+            <div class="py-3  text-center felx" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <div class="status">
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-1" id="feature-sub">Job Reliableの状況</p>
+                    <h5 id="date-today"></h5>
+                </div>
+            </div>
+
+            <script>
+                let dateToday = document.getElementById("date-today");
+
+                let today = new Date();
+                let day = `${today.getDate() <10 ? "0" : ""}${today.getDate()}`;
+                let month = `${(today.getMonth()+1)<10 ? "0" : ""}${(today.getMonth()+1)}`;
+                let year = `${today.getFullYear()<10 ? "0" : ""}${today.getFullYear()}`;
+                
+                dateToday.textContent = `(${year}年${month}月${day}日時点)`;
+            </script>
+
+
+
+    <div class="box" data-aos="fade-up"></div>
+
+    <div id="counter-section-container">
+    
+        <div id="counter-box-container">
+    
+            <div id="counter-box">
+                <h3>お取引介護施設数</h3><span class="counter" data-number="45"></span>
+                <p>施設</p>
+            </div>
+    
+            <div id="counter-box">
+                <h3>内定者数</h3><span class="counter" data-number="142"></span>
+                <p>名</p>
+            </div>
+    
+        </div>
+    
+    </div>
+</div>
+
     <!--Feature-->
     <div class="bg-light">
         <div class="1 container py-3 ">
@@ -232,61 +281,66 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3 pb-5  animate__animated animate__fadeInUp">
-
-                <div class="col">
-                    <div class="card shadow-sm ">
-                        <img src="img/feature_01.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3>早期退職は全額返金</h3>
-                            <p class="card-text">長期雇用を前提とした人材をご紹介しますので、入社６ヶ月以内の退職は全額返金いたします。
-
-                                保証期間は６か月、１２か月、３６か月の３つをご用意しています。
-
-                                「すぐに辞められると困る…」と不安な事業者様でも安心してお受け入れいただけます。</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm ">
-                        <img src="img/feature_02.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3>トータルサポート</h3>
-                            <p class="card-text">人材募集から在留資格の変更及び、入社後のサポートまで弊社がトータルにサポートいたします。
-
-                                ご希望の事業者様には1、2年で登録支援コンサル代を無くせるようにサポートします。
-
-                                就労者の支援を自社で行うことにより、特定技能の受け入れに伴うコストを削減することが可能です。</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm ">
-                        <img src="img/jinzai3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3>独自の海外ネットワーク</h3>
-                            <p class="card-text">YORISOI介護日本語学校ネパール/インドネシアと専属パートナーシップ契約を締結しており、優秀な人材を安定的に供給します。
-
-                                また、弊社の現地法人（ネパール/インドネシア/ベトナム/フィリピン/中国）から直接。優秀な人材をご紹介致します。</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm ">
-                        <img src="img/jinzai4.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3>介護福祉士合格をサポート</h3>
-                            <p class="card-text">一般社団法人しふく福祉人材協会が提供するオンラインでの介護福祉士合格プログラムにて、入社後の資格取得もサポートします。</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>-->
         </div>
     </div>
+
+    <!--SSW specialities-->
+
+<div class="bg-light">
+    <div class="2 container py-3">
+        <div class="py-3 text-center" data-aos="zoom-in"
+             data-aos-anchor-placement="bottom-bottom">
+            <h1 class="display-5 fw-bold" id="staff">特定技能の特徴</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4" id="staff-sub">Features of Designated Skills Visa</p>
+            </div>
+        </div>
+    <h4 data-aos="flip-up" data-aos-duration="2000">特定技能のメリット</h4>
+    <div class="b-grid mb-2 gap-2 d-sm-flex justify-content-sm-center">
+    <div class="card  col-sm-4"  data-aos="flip-left" data-aos-duration="2000">
+        <div class="card-body ">
+            <h4 class="ssw-sub">施設配置の自由</h5>
+            <p class="card-text">複数の施設を経営している企業の場合、A施設、B施設、C施設等で転籍可能です。</p>
+        </div>
+    </div>
+    <div class="card col-sm-4" data-aos="zoom-in-down" data-aos-duration="2000">
+        <div class="card-body">
+            <h4 class="ssw-sub">指導員不要で夜勤勤務が可能</h5>
+            <p class="card-text">技能実習生は実習指導員がいないと夜勤は出来ません。</p>
+        </div>
+    </div>
+    <div class="card col-sm-4" data-aos="flip-right" data-aos-duration="2000">
+        <div class="card-body">
+            <h4 class="ssw-sub">ランニングコストが減らせる</h5>
+            <p class="card-text">技能実習の管理費と異なり、自社で3ヶ月面談等が可能出れればコスト削減が可能です。</p>
+        </div>
+    </div>
+    </div>
+    <div class="b-grid mb-2 gap-2 d-sm-flex justify-content-sm-center">
+        <div class="card col-sm-4"  data-aos="zoom-in-left" data-aos-duration="2000">
+            <div class="card-body">
+                <h4 class="ssw-sub">介護の特定技能１号外国人は、技能実習３年修了の人材と介護技能が同等であることから、就労と同時に配置基準に算定します</h5>
+                <p class="card-text">事業所に配属後すぐに人員配置基準に加えることができる（基本的には自治体の条例は厚生労働省の公示に合わせているが異なる場合もあり）。</p>
+            </div>
+        </div>
+        <div class="card col-sm-4" data-aos="flip-right" data-aos-duration="2000">
+            <div class="card-body">
+                <h4 class="ssw-sub">法的な制限を最小限にとどめることができる</h5>
+                <p class="card-text">技能実習計画に基づいた作業を忠実に実施していないと法律違反として、実習取消処分になります。また、36協定など、労働基準法に違反すると、これも実習取消処分になってしまいます。</p>
+            </div>
+        </div>
+        <div class="card col-sm-4" data-aos="zoom-in-right" data-aos-duration="2000">
+            <div class="card-body">
+                <h4 class="ssw-sub">初年度から常勤の介護職員数まで採用できる上、新設から3年未満でも導入可能</h5>
+                <p class="card-text">外国人介護士の雇用における受け入れ人数枠が大きい上、新設の事業者でも外国雇用が可能です。</p>
+            </div>
+        </div>
+    </div>
+    <h4 class="py-3 text-Left" data-aos="flip-up" data-aos-duration="2000">外国人介護人材受入れの仕組み</h4>
+    <div class="img" data-aos="zoom-in-right" data-aos-duration="2000">
+    <img src="./img/ppttable.png" width="100%">
+    </div>
+
     <!--Staff-->
     <div class="bg-light">
         <div class="2 container py-3">
@@ -338,264 +392,7 @@
 
         </div>
     </div>
-    <!--Company old-->
-    <!--<div class="bg-primary ppp pb-5">
-        <div class="3 container py-3">
-            <div class=" py-5 text-center" data-aos="fade-up"
-                 data-aos-anchor-placement="bottom-bottom">
-                <h1 class="display-5 fw-bold text-light" id="company">Company</h1>
-                <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4 text-light">Personnel we can introduce</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-sm-12" data-aos="fade-right"
-                     data-aos-anchor="#example-anchor"
-                     data-aos-offset="2000"
-                     data-aos-duration="2000">
-                    <div class="py-3 accordion accordion-flush" id="accordionFlushExampleOne">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                        aria-controls="flush-collapseOne">
-                                    <strong>資本金</strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExampleOne">
-                                <div class="accordion-body">1,000万円
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                        aria-controls="flush-collapseTwo">
-                                    <strong> 設立 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExampleOne">
-                                <div class="accordion-body">1994年 3月 1日
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                        aria-controls="flush-collapseThree">
-                                    <strong>役員 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExampleOne">
-                                <div class="accordion-body">代表取締役社長　今村 努
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                        aria-controls="flush-collapseFour">
-                                    <strong>従業員数 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExampleOne">
-                                <div class="accordion-body">国内 45名　海外 30名 （内外国人スタッフ71名）
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
-                                        aria-controls="flush-collapseFive">
-                                    <strong>取引銀行 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseFive" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExampleOne">
-                                <div class="accordion-body">みずほ銀行　西野田支店
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingSix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseSix" aria-expanded="false"
-                                        aria-controls="flush-collapseSix">
-                                    <strong>主な取引先 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseSix" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExampleOne">
-                                <div class="accordion-body">KDDI株式会社
-                                    ソフトバンク株式会社
-                                    東日本電信電話株式会社
-                                    介護事業者
-                                    NTTインターネット株式会社
-                                    日本国内　大学、専門学校、日本語学校　多数
-                                    海外　日本語学校、留学会社　送り出し機関
-                                    他多数（順不同）
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingSeven">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseSeven" aria-expanded="false"
-                                        aria-controls="flush-collapseSeven">
-                                    <strong> 東京本社 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseSeven" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExampleOne">
-                                <div class="accordion-body">〒110-0005　東京都台東区上野1-11-9　イマスサニービル８階
-                                    TEL：03-5812-8321　FAX：03-5812-8366
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-12" data-aos="fade-left"
-                     data-aos-anchor="#example-anchor"
-                     data-aos-offset="2000"
-                     data-aos-duration="2000">
-                    <div class="py-3 accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingEight">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseEight" aria-expanded="false"
-                                        aria-controls="flush-collapseEight">
-                                    <strong>大阪支社 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseEight" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">〒531-0072 　大阪市北区豊崎3丁目20-9　三栄ビル9F
-                                    TEL：06-6371-6851　FAX：06-6371-6852
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingNine">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseNine" aria-expanded="false"
-                                        aria-controls="flush-collapseNine">
-                                    <strong>福岡支社 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseNine" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">〒812-0013 　福岡県福岡市博多区博多駅東2-6-28
-                                    ユナイト博多ビル5階
-                                    TEL：092-477-2846　FAX：092-477-2848
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingTen">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseTen" aria-expanded="false"
-                                        aria-controls="flush-collapseTen">
-                                    <strong>名古屋支社 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTen" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">〒460-0003 　愛知県名古屋市中区錦2-9-6
-                                    名和丸の内ビル7階A号室
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingEleven">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseEleven" aria-expanded="false"
-                                        aria-controls="flush-collapseEleven">
-                                    <strong> 海外拠点 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseEleven" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">中国（大連）
-                                    フィリピン（ダバオ）
-                                    ネパール（カトマンズ）
-                                    インドネシア（スラゲン）
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingTwelve">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseTwelve" aria-expanded="false"
-                                        aria-controls="flush-collapseTwelve">
-                                    <strong>事業内容 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwelve" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">・有料職業紹介事業
-                                    　許可番号13－ユー314199　登録支援機関　19登-001293
-                                    　特定技能サーチの運営　https://tokuteiginou-search.com
-                                    ・携帯電話の販売代理業務
 
-                                    介護職に特化した外国人材紹介事業を行っております。
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingThirteen">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseThirteen" aria-expanded="false"
-                                        aria-controls="flush-collapseThirteen">
-                                    <strong>ご紹介できる人材 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThirteen" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingThirteen" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">・介護福祉士（暫定介護福祉士）
-                                    ・正看護師
-                                    ・准看護師等の有資格者
-                                    ・特定技能介護合格者
-                                    ・留学生（暫定）介護福祉士
-                                    ・就労制限のない人材
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingFourteen">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseFourteen" aria-expanded="false"
-                                        aria-controls="flush-collapseFourteen">
-                                    <strong>ご紹介可能な国籍 </strong>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseFourteen" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">・インドネシア
-                                    ・ネパール
-                                    ・フィリピン
-                                    ・ミャンマー
-                                    ・中国
-                                    ・モンゴル
-                                    ・ベトナム
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    </div>-->
     <!--Company-->
     <div class="bg-primary ppp pb-5">
         <div class="3 container py-3">
@@ -614,48 +411,54 @@
                     <table class="table text-light">
                         <tbody>
                         <tr>
-                            <th scope="row">資本金</th>
-                            <td>1,000万円</td>
+                            <th >資本金</th>
+                            <th >1,000万円</th>
 
                         </tr>
                         <tr>
                             <th scope="row">設立</th>
-                            <td>1994年 3月 1日</td>
+                            <th>1994年 3月 1日</th>
 
                         </tr>
                         <tr>
                             <th scope="row">役員</th>
-                            <td>代表取締役社長　今村 努</td>
+                            <th>代表取締役社長　<br>今村 努</th>
 
                         </tr>
                         <tr>
                             <th scope="row">従業員数</th>
-                            <td>国内 45名　海外 30名 （内外国人スタッフ71名）</td>
+                            <th>国内 45名　<br>
+                                海外 50名<br>
+                                (内外国人スタッフ95名)</th>
 
                         </tr>
                         <tr>
                             <th scope="row">取引銀行</th>
-                            <td>みずほ銀行　西野田支店</td>
+                            <th>みずほ銀行　西野田支店</th>
 
                         </tr>
                         <tr>
                             <th scope="row">主な取引先</th>
-                            <td>KDDI株式会社<br>
+                            <th>KDDI株式会社<br>
                                 ソフトバンク株式会社<br>
                                 東日本電信電話株式会社<br>
                                 介護事業者<br>
                                 NTTインターネット株式会社<br>
-                                日本国内　大学、専門学校、日本語学校　多数<br>
-                                海外　日本語学校、留学会社　送り出し機関<br>
+                                日本国内　大学、専門学校、<br>
+                                日本語学校　多数<br>
+                                海外　日本語学校、留学会社<br>
+                                送り出し機関<br>
                                 他多数（順不同）
-                            </td>
-
+                            </th>
                         </tr>
                         <tr>
                             <th scope="row">東京本社</th>
-                            <td>〒110-0005　東京都台東区上野1-11-9　イマスサニービル８階<br>
-                                TEL：03-5812-8321　FAX：03-5812-8366
-                            </td>
+                            <th>〒110-0005　<br>
+                                東京都台東区上野1-11-9<br>
+                                イマスサニービル８階<br>
+                                TEL：03-5812-8321<br>
+                                FAX：03-5812-8366
+                            </th>
 
                         </tr>
                         </tbody>
@@ -669,67 +472,77 @@
                         <tbody>
                         <tr>
                             <th scope="row">大阪支社</th>
-                            <td>〒531-0072 　大阪市北区豊崎3丁目20-9　三栄ビル9F<br>
-                                TEL：06-6371-6851　FAX：06-6371-6852
-                            </td>
+                            <th>〒531-0072<br>
+                                大阪市北区豊崎3丁目20-9<br>
+                                三栄ビル9F<br>
+                                TEL：06-6371-6851　<br>
+                                FAX：06-6371-6852
+                            </th>
 
                         </tr>
                         <tr>
                             <th scope="row">福岡支社</th>
-                            <td>〒812-0013 　福岡県福岡市博多区博多駅東2-6-28<br>
+                            <th>〒812-0013 <br>
+                                福岡県福岡市博多区博多駅東2-6-28<br>
                                 ユナイト博多ビル5階<br>
-                                TEL：092-477-2846　FAX：092-477-2848
-                            </td>
+                                TEL：092-477-2846<br>
+                                FAX：092-477-2848<br>
+                            </th>
 
                         </tr>
                         <tr>
                             <th scope="row">名古屋支社</th>
-                            <td>〒460-0003 　愛知県名古屋市中区錦2-9-6<br>
+                            <th>〒460-0003 <br>
+                                愛知県名古屋市中区錦2-9-6<br>
                                 名和丸の内ビル7階A号室
-                            </td>
+                            </th>
 
                         </tr>
                         <tr>
                             <th scope="row">海外拠点</th>
-                            <td>中国（大連）<br>
+                            <th>中国（大連）<br>
                                 フィリピン（ダバオ）<br>
                                 ネパール（カトマンズ）<br>
-                                インドネシア（スラゲン）
-                            </td>
+                                インドネシア（スラゲン）<br>
+                                ベトナム　（ホーチミン)
+
+                            </th>
 
                         </tr>
                         <tr>
                             <th scope="row">事業内容</th>
-                            <td>・有料職業紹介事業<br>
-                                　許可番号13－ユー314199　登録支援機関　19登-001293<br>
-                                　特定技能サーチの運営　https://tokuteiginou-search.com<br>
-                                ・携帯電話の販売代理業務<br><br>
+                            <th>・有料職業紹介事業<br>
+                                　許可番号13－ユー314199<br>　
+                                登録支援機関　19登-001293<br>
+                                　特定技能サーチの運営<br>　
+                                <a href="https://tokuteiginou-search.com" target="_blank"><url class=sp-text-light>https://tokuteiginou-search.com</url></a><br>
+                                ・携帯電話の販売代理業務<br>
 
                                 介護職に特化した外国人材紹介事業を行っております
-                            </td>
+                            </th>
 
                         </tr>
                         <tr>
                             <th scope="row">ご紹介できる人材</th>
-                            <td>・介護福祉士（暫定介護福祉士）<br>
+                            <th>・介護福祉士（暫定介護福祉士）<br>
                                 ・正看護師<br>
                                 ・准看護師等の有資格者<br>
                                 ・特定技能介護合格者<br>
                                 ・留学生（暫定）介護福祉士<br>
                                 ・就労制限のない人材
-                            </td>
+                            </th>
 
                         </tr>
                         <tr>
                             <th scope="row">ご紹介可能な国籍</th>
-                            <td>・インドネシア<br>
+                            <th>・インドネシア<br>
                                 ・ネパール<br>
                                 ・フィリピン<br>
                                 ・ミャンマー<br>
                                 ・中国<br>
                                 ・モンゴル<br>
                                 ・ベトナム
-                            </td>
+                            </th>
 
                         </tr>
 
@@ -741,7 +554,7 @@
         </div>
 
     </div>
-    </div>
+    
 
 
     <!--Contact-->
@@ -756,14 +569,16 @@
                             <br>企業様が人材採用時、応募者の前勤務先での勤務態度などを、弊社が代行してヒアリングさせていただき、スムーズな採用活動をサポートいたします。
                             弊社は社員の80%が外国籍で、中国、フィリピン、インドネシア、ネパールなどにも支社を設けています。
                             <br>そのため、特定技能などの入国予定の就業者採用にも最適です。</p>
-                        <h1 class="pb-2"><strong>お気軽にお問い合わせください</strong></h1>
+                            <h2 class="pb-2"><strong><a href="./resources/poster.html" target="_blank" style="color: white"> 「詳細は」<img src="img/img_508714.png" class="hand" ></a></strong></h2>
+                        <h2 class="pb-2"><strong>お気軽にお問い合わせください</strong></h2>
+                        
                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
 
-                            <button type="button" class="btn bg-newBlue btn-lg px-4 gap-3 customBtn text-light">
+                            <button type="button" class="btn btn-outline-primary bg-newBlue btn-lg px-4 gap-3 customBtn text-light">
                                 <i class="bi bi-telephone-fill text-light"></i>
                                 <a href="tel:03-5812-8321" style="color: white">03-5812-8321</a>
                             </button>
-                            <button type="button" class="btn bg-newOrange btn-lg px-4 gap-3 customBtn text-light" ><a class="nav-link bg-newOrange customBtn text-light" href="https://www.eastbridge.co.jp/jinzai/contact.php">お問い合わせ</a></button>
+                            <button type="button" class="btn-outline-primary btn bg-newOrange btn-lg px-4 gap-3 customBtn text-light" ><a class="nav-link bg-newOrange customBtn text-light" href="https://www.eastbridge.co.jp/jinzai/contact.php">お問い合わせ</a></button>
                         </div>
                     </div>
                 </div>
@@ -790,6 +605,7 @@
         </span>
     </button>
 </main>
+
 
 <script src="js/aos.js"></script>
 <script>AOS.init();</script>
